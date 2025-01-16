@@ -18,7 +18,7 @@ function App() {
   const handleverify=(data)=>{
     console.log("here also");
     const options = {
-      key: ({}).RAZORPAY_ID,
+      key: import.meta.env.RAZORPAY_ID,
       amount: data.amount,
       currency: data.currency,
       name: "Vedant",
